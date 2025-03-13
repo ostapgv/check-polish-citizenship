@@ -15,7 +15,7 @@ Pushover account.
 
 ### Steps to run the script
 - Clone the repository.
-- Install `node` and `pnpm` using e.g. `brew`.
+- Install [nodejs](https://nodejs.org/en/download) and [pnpm](https://pnpm.io/installation#using-npm).
 - Install dependencies using `pnpm i`.
 - Make sure `Chrome` browser is installed but NOT running.
 - Start Chrome in the remote debugging mode. Execute following command in the terminal.
