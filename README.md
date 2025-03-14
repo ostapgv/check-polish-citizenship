@@ -14,7 +14,20 @@ Pushover account.
 - Install the Pushover app on your phone and login with the same account.
 
 ### Steps to run the script
-- Clone the repository.
+#### Prerequisites
+- Clone the repository or download and unpack it as a zip file.
+- Install [nodejs](https://nodejs.org/en/download).
+- Make sure `Chrome` browser is installed but NOT running.
+- Start Chrome in the remote debugging mode. Execute following command in the terminal.
+  - MacOS: ```Open -a "Google Chrome" --args --remote-debugging-port=9222```
+  - Windows: ```"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222```, please adjust the path to the Chrome installation.
+  - Linux: ```google-chrome --remote-debugging-port=9222``` or ```chromium --remote-debugging-port=9222``` depending on the browser.
+#### Running the script
+- Run the script using `npm start`.
+
+### Steps to run the script in development mode
+#### Prerequisites
+- Clone the repository or download and unpack it as a zip file.
 - Install [nodejs](https://nodejs.org/en/download) and [pnpm](https://pnpm.io/installation#using-npm).
 - Install dependencies using `pnpm i`.
 - Make sure `Chrome` browser is installed but NOT running.
@@ -23,4 +36,6 @@ Pushover account.
   - Windows: ```"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222```, please adjust the path to the Chrome installation.
   - Linux: ```google-chrome --remote-debugging-port=9222``` or ```chromium --remote-debugging-port=9222``` depending on the browser.
 - Login to [mobywatel](https://www.mobywatel.gov.pl/twoje-dane/pesel) page in opened `Chrome` browser.
-- Execute ```pnpm start``` in terminal to start the script
+#### Running the script
+- Run the script in development mode using `pnpm dev`.
+- Optionally you can build the script using `pnpm build` and run the compiled script using `pnpm start`.

@@ -4,16 +4,20 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@types/play-sound": "^1.1.2",
+  "dependencies": {
     "axios": "^1.8.2",
     "dotenv": "^16.4.7",
-    "play-sound": "^1.1.6",
+    "play-sound": "^1.1.6"
+  },
+  "devDependencies": {
+    "@types/play-sound": "^1.1.2",
     "ts-node": "^10.9.2"
   }
 }

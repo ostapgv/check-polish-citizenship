@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({ path: ['../.env', '.env'] });
 
 export const envVars = {
   SHOULD_SEND_PUSH_NOTIFICATIONS: process.env.SHOULD_SEND_PUSH_NOTIFICATIONS === 'true',
